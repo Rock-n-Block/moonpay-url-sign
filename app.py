@@ -1,6 +1,5 @@
 from flask import Flask, request
 from flask_json import FlaskJSON, JsonError, json_response
-from flask_api import FlaskAPI
 
 from urllib.parse import urlparse, urlencode
 import hmac
