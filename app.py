@@ -10,7 +10,6 @@ from settings_local import SIGN_SECRET
 
 app = Flask(__name__)
 json_app = FlaskJSON(app)
-api_app = FlaskAPI(__name__)
 
 app.config['JSON_ADD_STATUS'] = True
 app.config['JSON_DATETIME_FORMAT'] = '%d/%m/%Y %H:%M:%S'
