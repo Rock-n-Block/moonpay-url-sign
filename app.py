@@ -22,7 +22,7 @@ def sign_url(original_url):
     key = hmac.new(encoded_secret, encoded_query, sha256).digest()
     signature = base64.b64encode(key)
     query_signature = {'signature': signature.decode('utf-8')}
-    signed_url = original_url + urlencode(query_signature)
+    signed_url = original_url + '&' + urlencode(query_signature)
     return signed_url
 
 
